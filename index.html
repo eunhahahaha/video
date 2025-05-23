@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+      <!-- Favicons -->
+    <link rel="icon" href="./ribbon_favicon.png" type="image/x-icon">
+    <style>
+        
+        *{margin:0; padding:0;}
+
+        #wrapper{
+            width:1280px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        a{text-decoration:none;
+				color:#000;}
+		.fixed_box{position:fixed;
+				bottom:40px;
+				right:30px;
+				width:40px;}
+        .home_btn, .top_btn{
+            display: inline-block;
+            width:55px;
+            line-height: 55px;
+            background-color: #D0B9B1;
+            text-align: center;
+            border-radius:50%;
+            margin-bottom:5px;
+            color:#fff;
+            transition: all 0.5s;
+        }
+        .fixed_box a:hover{
+            background-color: #C6291A;
+        }
+        /* 텍스트 */
+        .title_text{
+            padding: 50px 0;
+        }
+        h4{
+            color: #777777;
+            font-weight: normal;
+        }
+
+        @media (max-width:1320px){
+            #wrapper{
+                width:100%;
+                margin:0 auto;
+                position: relative;
+                height: 0;
+                padding-bottom: 56.25%;
+            }
+
+            #wrapper iframe {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body> 
+    
+    <div id="wrapper">
+        <div class="title_text">
+            <h1>NARAEDESIG</h1>
+            <h4>나래디자인학원 숏폼 영상</h4>
+        </div>
+        
+        <iframe width="315" height="560" src="https://www.youtube.com/embed/MF1EnKwPLNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+        </iframe>
+    </div>
+    <div class="fixed_box">
+        <a href="https://eunhahahaha.github.io/portfolio/" class="home_btn">
+            Home
+        </a>
+    </div>
+    
+</body>
+</html>
